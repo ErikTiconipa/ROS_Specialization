@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import Float64
 
 # el codigo se identifica ante ros
-rospy.init_node('float_sub', anonymous=True)	
+rospy.init_node('cod2_float_sub', anonymous=True)	
 
 float_value=0
 
@@ -12,7 +12,7 @@ float_value=0
 def callback(data):	
     global float_value
     float_value=data.data
-    rospy.loginfo("Yo encuche %f", float_value)
+    rospy.loginfo("Yo encuche en topic random_float : %f", float_value)
     
 
 # se suscribe al topico

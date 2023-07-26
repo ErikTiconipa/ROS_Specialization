@@ -18,9 +18,7 @@ def callback(valor):
 sub = rospy.Subscriber("random_int_suma", Int32, callback)
 
 # sub = rospy.Subscriber("nombre-topico", tipo-mensaje, funcion-callback)
-# el codigo int_pub.py publica al topico 'random_int'
-
-# Lo siguiente solo es para que el codigo no se cierre
+# el codigo cod3_int_sp publica al topico 'random_int_suma'
 
 rate = rospy.Rate(1) # 1hz --> 1/1hz=1s
 

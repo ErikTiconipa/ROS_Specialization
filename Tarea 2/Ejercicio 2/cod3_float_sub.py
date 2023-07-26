@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import Float64
 
 # el codigo se identifica ante ros
-rospy.init_node('float_sub', anonymous=True)	
+rospy.init_node('cod3_float_sub', anonymous=True)	
 
 float_value=0
 

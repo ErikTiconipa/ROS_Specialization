@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# --------------publicador-suscriptor de Point----------------
+# --------------publicador de Point -suscriptor de float----------------
 import rospy
 from geometry_msgs.msg import Point
 from std_msgs.msg import Float64
@@ -22,9 +22,6 @@ def callback3(data):
 	global float_value_3	
 	float_value_3=data.data
 	rospy.loginfo("I heard canal 3 %f", float_value_3)
-
-
-
 
 def funcion():
 	pub = rospy.Publisher('random_float_point', Point, queue_size=10)

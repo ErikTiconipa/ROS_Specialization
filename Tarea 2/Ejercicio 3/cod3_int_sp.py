@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # --------------publicador-suscriptor de Int32--------------
-# el codigo escucha al topico 'sub'
-# Y publica al topico 'pub' el cuadrado de los valores que lleguen
+# el codigo escucha al topico 'random_int_1' y 'random_int_2'
+# Y publica al topico 'random_int_suma' la suma de los valores
 import rospy
 from std_msgs.msg import Int32
 
@@ -29,15 +29,15 @@ pub = rospy.Publisher('random_int_suma', Int32, queue_size=1)
 # se suscribe al topico
 sub = rospy.Subscriber("random_int_1", Int32, callback1) 
 # publicar a floatsub desde terminal con: 
-# rostopic pub /intsub std_msgs/Int32 "data: 4"
+# rostopic pub /random_int_1 std_msgs/Int32 "data: 4"
 sub = rospy.Subscriber("random_int_2", Int32, callback2) 
 # publicar a floatsub desde terminal con: 
-# rostopic pub /intsub std_msgs/Int32 "data: 4"
+# rostopic pub /random_int_2 std_msgs/Int32 "data: 4"
 
-rate = rospy.Rate(1) # 10hz --> 1/10hz = 0.1s
+rate = rospy.Rate(1) # 1hz --> 1s
 while not rospy.is_shutdown():
 	valor=int_value_1+int_value_2
 	pub.publish(valor) # se publica el valor
-	# escuchar el valor cuadrado desde terminal con:
-	# rostopic echo /intpub
+	# escuchar el valor de la suma desde terminal con:
+	# rostopic echo /random_int_suma
 	rate.sleep() # delay de 0.1 segundos

@@ -22,7 +22,7 @@ def callback(data):
 
 # se suscribe al topico
 sub = rospy.Subscriber("random_float_point", Point, callback)
-# el codigo point_pub.py publica al topico 'random_point'
+# el codigo cod4_float_point_sp.py publica al topico 'random_float_point'
 
 rate = rospy.Rate(1) # 1hz --> 1/1hz=1s
 while not rospy.is_shutdown():

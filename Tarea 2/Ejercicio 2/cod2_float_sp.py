@@ -11,7 +11,7 @@ float_value=0.0
 def callback(data):
 	global float_value	
 	float_value=data.data
-	rospy.loginfo("Yo encuche %f", float_value)
+	rospy.loginfo("Yo encuche en topic random_float : %f", float_value)
 
 pub = rospy.Publisher('random_float_pub', Float64, queue_size=10)
 sub = rospy.Subscriber("random_float", Float64, callback)
