@@ -1,5 +1,7 @@
 # ROS_Specialization
-Todo de la especialidad en ROS
+Aqui encontrara un recordatorio de los comnandos mas usados en Git
 
-Se ncecesita correr este comando se necesita dar persimo a un archivo
-En aqui se debe especificar todos los pasos para replicar el Robot que se esta construyendo
+mkdir : Crear una carpeta
+touch : Crear un arvhico
+cd : navegar por las carpetas
+ls : ver el contenido
