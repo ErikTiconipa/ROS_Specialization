@@ -1,2 +1,19 @@
 Hola la
 
+Comandso en Git
+
+Comando 
+
+git status
+
+    Te da un reporte de todos los archivos modificados con las modificaciones guardadas 
+    si estan o no rastreados y guia par ahacer commit o restare
+
+git add .
+
+    Añade todo los archivos, a un sitio listo para poder ser subidos al server de Git, si 
+    quieres solo alistar un archivo en vez de punto se debe poner el nombre del archivo
+
+git commit -m "Mensaje de commit"
+
+    Identifica el grupo de archivos que se subiran al servidor de git, para que esten facilmente identificados
