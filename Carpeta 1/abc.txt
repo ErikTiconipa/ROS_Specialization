@@ -17,3 +17,7 @@ git add .
 git commit -m "Mensaje de commit"
 
     Identifica el grupo de archivos que se subiran al servidor de git, para que esten facilmente identificados
+
+git pull 
+
+    Este comando es lo opuesto a pull sincroniza lo de la nube con tu local Buenisimo
