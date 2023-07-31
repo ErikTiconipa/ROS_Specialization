@@ -17,3 +17,9 @@ git commit -m "Mensaje de commit"
 git pull 
 
     Este comando es lo opuesto a pull sincroniza lo de la nube con tu local Buenisimo
+
+git clone 
+
+    git clone 'repositorio' #Se usa para clonar un repositorio
+    git clone --branch <branchname> <remote-repo-url> #Clona un repositorio completo pero te carga el Brach especificado
+    git clone --branch <branchname> --single-branch <remote-repo-url> #Copia un Brach especifico de un repositorio
