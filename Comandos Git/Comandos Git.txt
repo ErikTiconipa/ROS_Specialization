@@ -1,8 +1,4 @@
-Hola la
-
-Comandso en Git
-
-Comando 
+# Aqui se pones los comandos mas usados de Git y que ya he usados antes NO OLVIDAR
 
 git status
 

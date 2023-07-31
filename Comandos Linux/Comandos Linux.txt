@@ -1,0 +1,9 @@
+#Comandos en linux mas usados NO OLVIDAR
+
+mkdir : Crear una carpeta
+touch : Crear un arvhico
+cd : navegar por las carpetas
+ls : ver el contenido
+cat : captura todo lo que ocntiene un archivo lo mustra en la terminal
+
+nano : Es un programa dentro de la termianl para editar archivos
