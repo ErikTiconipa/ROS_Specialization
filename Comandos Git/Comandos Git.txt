@@ -23,3 +23,7 @@ git clone
     git clone 'repositorio' #Se usa para clonar un repositorio
     git clone --branch <branchname> <remote-repo-url> #Clona un repositorio completo pero te carga el Brach especificado
     git clone --branch <branchname> --single-branch <remote-repo-url> #Copia un Brach especifico de un repositorio
+
+git checkout 'Nombre del branch'
+
+    Cambia de branch muy interesante
