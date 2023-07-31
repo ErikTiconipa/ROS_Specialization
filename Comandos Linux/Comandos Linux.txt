@@ -1,10 +1,28 @@
 #Comandos en linux mas usados NO OLVIDAR
 
+sudo : permisos de administrador
 mkdir : Crear una carpeta
 touch : Crear un arvhico
 cd : navegar por las carpetas
 ls : ver el contenido
-cat : captura todo lo que ocntiene un archivo lo mustra en la terminal
 cp : Es para copiar un archivo
+rm : Borrar o remover archivos
+mv : mover archivos
+pwd : mostrar la ruta actual
+clear : limpiar terminal
+chmod :
+grep :
+echo : 
+sudo gedit <archivo> : Editar archivo con super-usuario
 
-nano : Es un programa dentro de la termianl para editar archivos
+#Editores de Codigo
+cat : captura todo lo que ocntiene un archivo lo mustra en la terminal
+nano : Es un programa dentro de la terminal para editar archivos
+vim : editar Codigo
+
+# Los que se aplican cuando tengo interfaz en Ubuntu
+
+ctrl + shift + c / v : Copiar y pegar
+ctrl+L : Limpiar terminal
+ctrl + u : Borrar línea en la terminal 
+sudo nautilus : Abrir administrador de archivos modo  super-usuario
