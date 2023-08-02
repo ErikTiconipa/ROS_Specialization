@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # --------------publicador de Point -suscriptor de float----------------
 import rospy
 from geometry_msgs.msg import Point

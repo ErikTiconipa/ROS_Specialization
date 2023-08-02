@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # --------------publicador-suscriptor de Float64--------------
 # el codigo escucha al topico 'random_float'
 # Y publica al topico 'random_float_pub' el cuadrado de los valores que lleguen
