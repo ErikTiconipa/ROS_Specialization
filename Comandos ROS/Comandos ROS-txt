@@ -1,0 +1,11 @@
+catkin_make
+    Compila un espacio de trabajo
+
+catkin_create_package
+    Crear un paquete donde puede estar tus programas
+
+chmod +x *.py
+    Convierte en ejecutable todos los archivos les da permisos para ser accesibles creo
+source devel/setup.bash
+    Actualiza la termianl con las fuentes
+roslaunch 'nombre packgae' 'nombre launch'
