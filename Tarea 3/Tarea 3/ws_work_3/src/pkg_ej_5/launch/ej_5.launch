@@ -1,8 +1,0 @@
-<launch>
-  <node name="cod1_int_pub" pkg="pkg_ej_5" type="cod1_int_pub.py"/>  
-  <node name="cod2_int_pub" pkg="pkg_ej_5" type="cod2_int_pub.py"  />
-  <node name="cod3_int_point_sp" pkg="pkg_ej_5" type="cod3_int_point_sp.py"  /> 
-  <node name="cod4_point_quat_sp" pkg="pkg_ej_5" type="cod4_point_quat_sp.py"  /> 
-  <node name="cod5_quat_twist_sp" pkg="pkg_ej_5" type="cod5_quat_twist_sp.py"  /> 
-  <node name="cod6_twist_sub" pkg="pkg_ej_5" type="cod6_twist_sub.py" output="screen"/>   
-</launch>
