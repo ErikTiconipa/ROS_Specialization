@@ -1,7 +1,7 @@
 catkin_make
     Compila un espacio de trabajo
 
-catkin_create_package
+catkin_create_pkg
     Crear un paquete donde puede estar tus programas
 
 chmod +x *.py
