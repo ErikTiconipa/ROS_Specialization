@@ -1,4 +1,0 @@
-<launch>
-  <node name="ej1_cod1_float_pub" pkg="pkg_ej_1" type="ej1_cod1_float_pub.py"/>  
-  <node name="ej1_cod2_float_sub" pkg="pkg_ej_1" type="ej1_cod2_float_sub.py" output="screen" />  
-</launch>

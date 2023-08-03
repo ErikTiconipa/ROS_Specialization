@@ -1,7 +1,0 @@
-<launch>
-  <include file="$(find pkg_ej_1)/launch/ej_1.launch"/>  
-  <include file="$(find pkg_ej_2)/launch/ej_2.launch"/> 
-  <include file="$(find pkg_ej_3)/launch/ej_3.launch"/>
-  <include file="$(find pkg_ej_4)/launch/ej_4.launch"/>
-  <include file="$(find pkg_ej_5)/launch/ej_5.launch"/>
-</launch>
