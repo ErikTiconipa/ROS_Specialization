@@ -1,7 +1,7 @@
 <launch>
-  <node name="cod1_float_pub" pkg="pkg_ej_4" type="cod1_float_pub.py"/>  
-  <node name="cod2_float_pub" pkg="pkg_ej_4" type="cod2_float_pub.py"  />
-  <node name="cod3_float_pub" pkg="pkg_ej_4" type="cod3_float_pub.py"  /> 
-  <node name="cod4_float_point_sp" pkg="pkg_ej_4" type="cod4_float_point_sp.py"  /> 
-  <node name="cod5_point_sub" pkg="pkg_ej_4" type="cod5_point_sub.py" output="screen"/>   
+  <node name="ej4_cod1_float_pub" pkg="pkg_ej_4" type="ej4_cod1_float_pub.py"/>  
+  <node name="ej4_cod2_float_pub" pkg="pkg_ej_4" type="ej4_cod2_float_pub.py"  />
+  <node name="ej4_cod3_float_pub" pkg="pkg_ej_4" type="ej4_cod3_float_pub.py"  /> 
+  <node name="ej4_cod4_float_point_sp" pkg="pkg_ej_4" type="ej4_cod4_float_point_sp.py"  /> 
+  <node name="ej4_cod5_point_sub" pkg="pkg_ej_4" type="ej4_cod5_point_sub.py" output="screen"/>   
 </launch>

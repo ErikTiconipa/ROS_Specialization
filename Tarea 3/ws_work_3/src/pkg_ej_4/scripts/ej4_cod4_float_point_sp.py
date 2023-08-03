@@ -24,11 +24,11 @@ def callback3(data):
 	rospy.loginfo("I heard canal 3 %f", float_value_3)
 
 def funcion():
-	pub = rospy.Publisher('random_float_point', Point, queue_size=10)
+	pub = rospy.Publisher('ej4_random_float_point', Point, queue_size=10)
 	
-	sub = rospy.Subscriber("random_float_1", Float64, callback1)
-	sub = rospy.Subscriber("random_float_2", Float64, callback2)
-	sub = rospy.Subscriber("random_float_3", Float64, callback3)  
+	sub = rospy.Subscriber("ej4_random_float_1", Float64, callback1)
+	sub = rospy.Subscriber("ej4_random_float_2", Float64, callback2)
+	sub = rospy.Subscriber("ej4_random_float_3", Float64, callback3)  
 	
 	rate = rospy.Rate(1) # 1hz
 	while not rospy.is_shutdown():
@@ -38,7 +38,7 @@ def funcion():
 		rate.sleep()
 
 if __name__ == '__main__':
-	rospy.init_node('cod4_float_point_sp', anonymous=True)	
+	rospy.init_node('ej4_cod4_float_point_sp', anonymous=True)	
 	try:
 		funcion()
 	except rospy.ROSInterruptException:

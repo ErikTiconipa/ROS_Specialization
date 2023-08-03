@@ -1,5 +1,5 @@
 <launch>
-  <node name="cod1_float_pub" pkg="pkg_ej_2" type="cod1_float_pub.py"/>  
-  <node name="cod2_float_sp" pkg="pkg_ej_2" type="cod2_float_sp.py"  /> 
-  <node name="cod3_float_sub" pkg="pkg_ej_2" type="cod3_float_sub.py" output="screen"/>   
+  <node name="ej2_cod1_float_pub" pkg="pkg_ej_2" type="ej2_cod1_float_pub.py"/>  
+  <node name="ej2_cod2_float_sp" pkg="pkg_ej_2" type="ej2_cod2_float_sp.py"  /> 
+  <node name="ej2_cod3_float_sub" pkg="pkg_ej_2" type="ej2_cod3_float_sub.py" output="screen"/>   
 </launch>

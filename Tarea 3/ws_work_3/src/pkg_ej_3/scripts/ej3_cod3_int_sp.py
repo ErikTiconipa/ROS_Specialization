@@ -6,7 +6,7 @@ import rospy
 from std_msgs.msg import Int32
 
 # el codigo se identifica ante ros
-rospy.init_node('cod3_int_sp', anonymous=True)	
+rospy.init_node('ej3_cod3_int_sp', anonymous=True)	
 # nombre-nodo puede ser cualquiera, 
 # preferible que sea igual al nombre del codigo
 int_value_1=0
@@ -25,12 +25,12 @@ def callback2(data):
 	rospy.loginfo("I heard canal 2 %d", int_value_2)	#print de ROS
 
 # se crea el publicador
-pub = rospy.Publisher('random_int_suma', Int32, queue_size=1)
+pub = rospy.Publisher('ej3_random_int_suma', Int32, queue_size=1)
 # se suscribe al topico
-sub = rospy.Subscriber("random_int_1", Int32, callback1) 
+sub = rospy.Subscriber("ej3_random_int_1", Int32, callback1) 
 # publicar a floatsub desde terminal con: 
 # rostopic pub /random_int_1 std_msgs/Int32 "data: 4"
-sub = rospy.Subscriber("random_int_2", Int32, callback2) 
+sub = rospy.Subscriber("ej3_random_int_2", Int32, callback2) 
 # publicar a floatsub desde terminal con: 
 # rostopic pub /random_int_2 std_msgs/Int32 "data: 4"
 

@@ -2,7 +2,7 @@
 import rospy
 from geometry_msgs.msg import Twist
 
-rospy.init_node('cod6_twist_sub', anonymous=True)	
+rospy.init_node('ej5_cod6_twist_sub', anonymous=True)	
 
 joint1_value = 0.0
 joint2_value = 0.0
@@ -26,7 +26,7 @@ def callback(data):
     print("angular.y: ", joint5_value)
     print("angular.z: ", joint6_value)
 
-sub = rospy.Subscriber("random_int_twist", Twist, callback)
+sub = rospy.Subscriber("ej5_random_int_twist", Twist, callback)
 rate = rospy.Rate(1) # 1hz
 
 while not rospy.is_shutdown():

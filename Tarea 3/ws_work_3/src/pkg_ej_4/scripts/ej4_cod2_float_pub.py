@@ -5,10 +5,10 @@ from std_msgs.msg import Float64
 import random
 
 #el codigo se identifica ante ros
-rospy.init_node('cod3_float_pub', anonymous=True)
+rospy.init_node('ej4_cod2_float_pub', anonymous=True)
 
 #se crea el publicador
-pub = rospy.Publisher('random_float_3', Float64, queue_size=1)
+pub = rospy.Publisher('ej4_random_float_2', Float64, queue_size=1)
 
 rate = rospy.Rate(1) # 1hz --> 1/1hz=1s
 while not rospy.is_shutdown():

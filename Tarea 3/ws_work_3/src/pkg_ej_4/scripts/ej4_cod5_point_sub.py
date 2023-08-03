@@ -4,7 +4,7 @@ import rospy
 from geometry_msgs.msg import Point
 
 # el codigo se identifica ante ros
-rospy.init_node('cod5_point_sub', anonymous=True)	
+rospy.init_node('ej4_cod5_point_sub', anonymous=True)	
 
 float_value1 = 0.0
 float_value2 = 0.0
@@ -21,7 +21,7 @@ def callback(data):
     rospy.loginfo("z: %f", float_value3)
 
 # se suscribe al topico
-sub = rospy.Subscriber("random_float_point", Point, callback)
+sub = rospy.Subscriber("ej4_random_float_point", Point, callback)
 # el codigo cod4_float_point_sp.py publica al topico 'random_float_point'
 
 rate = rospy.Rate(1) # 1hz --> 1/1hz=1s

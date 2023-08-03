@@ -1,6 +1,6 @@
 <launch>
-  <node name="cod1_int_pub" pkg="pkg_ej_3" type="cod1_int_pub.py"/>  
-  <node name="cod2_int_pub" pkg="pkg_ej_3" type="cod2_int_pub.py"  />
-  <node name="cod3_int_sp" pkg="pkg_ej_3" type="cod3_int_sp.py"  /> 
-  <node name="cod4_int_sub" pkg="pkg_ej_3" type="cod4_int_sub.py" output="screen"/>   
+  <node name="ej3_cod1_int_pub" pkg="pkg_ej_3" type="ej3_cod1_int_pub.py"/>  
+  <node name="ej3_cod2_int_pub" pkg="pkg_ej_3" type="ej3_cod2_int_pub.py"  />
+  <node name="ej3_cod3_int_sp" pkg="pkg_ej_3" type="ej3_cod3_int_sp.py"  /> 
+  <node name="ej3_cod4_int_sub" pkg="pkg_ej_3" type="ej3_cod4_int_sub.py" output="screen"/>   
 </launch>

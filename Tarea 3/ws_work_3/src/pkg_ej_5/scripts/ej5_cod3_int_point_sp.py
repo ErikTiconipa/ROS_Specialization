@@ -23,12 +23,12 @@ def callback2(data):
 
 def funcion():
 	# se crea el publicador
-	pub = rospy.Publisher('random_int_point',  Point, queue_size=10)
+	pub = rospy.Publisher('ej5_random_int_point',  Point, queue_size=10)
 	# se suscribe al topico
-	sub = rospy.Subscriber("random_int_1", Int32, callback1) 
+	sub = rospy.Subscriber("ej5_random_int_1", Int32, callback1) 
 	# publicar a floatsub desde terminal con: 
 	# rostopic pub /random_int_1 std_msgs/Int32 "data: 4"
-	sub = rospy.Subscriber("random_int_2", Int32, callback2) 
+	sub = rospy.Subscriber("ej5_random_int_2", Int32, callback2) 
 	# publicar a floatsub desde terminal con: 
 	# rostopic pub /random_int_2 std_msgs/Int32 "data: 4"
 
@@ -42,7 +42,7 @@ def funcion():
 
 
 if __name__ == '__main__':
-	rospy.init_node('cod3_int_point_sp', anonymous=True)	
+	rospy.init_node('ej5_cod3_int_point_sp', anonymous=True)	
 	try:
 		funcion()
 	except rospy.ROSInterruptException:

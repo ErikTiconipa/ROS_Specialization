@@ -5,7 +5,7 @@
 import rospy
 from std_msgs.msg import Float64
 
-rospy.init_node('cod2_float_sp', anonymous=True)
+rospy.init_node('ej2_cod2_float_sp', anonymous=True)
 float_value=0.0
 
 def callback(data):
@@ -13,8 +13,8 @@ def callback(data):
 	float_value=data.data
 	rospy.loginfo("Yo encuche en topic random_float : %f", float_value)
 
-pub = rospy.Publisher('random_float_pub', Float64, queue_size=10)
-sub = rospy.Subscriber("random_float", Float64, callback)
+pub = rospy.Publisher('ej2_random_float_pub', Float64, queue_size=10)
+sub = rospy.Subscriber("ej2_random_float", Float64, callback)
 
 rate = rospy.Rate(1) # 1hz
 while not rospy.is_shutdown():

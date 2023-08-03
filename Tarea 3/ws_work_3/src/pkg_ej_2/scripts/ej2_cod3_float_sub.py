@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import Float64
 
 # el codigo se identifica ante ros
-rospy.init_node('cod3_float_sub', anonymous=True)	
+rospy.init_node('ej2_cod3_float_sub', anonymous=True)	
 
 float_value=0
 
@@ -15,7 +15,7 @@ def callback(data):
     print(int_value)
 
 # se suscribe al topico
-sub = rospy.Subscriber("random_float_pub", Float64, callback)
+sub = rospy.Subscriber("ej2_random_float_pub", Float64, callback)
 # el codigo cod2_float_sp.py publica al topico 'random_float_pub'
 
 rate = rospy.Rate(1) # 1hz --> 1/1hz=1s

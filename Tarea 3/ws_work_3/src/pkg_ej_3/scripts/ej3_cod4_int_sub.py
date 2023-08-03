@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import Int32
 
 # el codigo se identifica ante ros
-rospy.init_node('cod4_int_sub', anonymous=True)	
+rospy.init_node('ej3_cod4_int_sub', anonymous=True)	
 #rospy.init_node('nombre-nodo', anonymous=True)
 # nombre-nodo puede ser cualquiera, 
 # preferible que sea igual al nombre del codigo
@@ -15,7 +15,7 @@ def callback(valor):
     print("El valor de la suma es:",int_value)
 
 # se suscribe al topico
-sub = rospy.Subscriber("random_int_suma", Int32, callback)
+sub = rospy.Subscriber("ej3_random_int_suma", Int32, callback)
 
 # sub = rospy.Subscriber("nombre-topico", tipo-mensaje, funcion-callback)
 # el codigo cod3_int_sp publica al topico 'random_int_suma'

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# --------------suscriptor de Float64 y publica un Quartenion----------------
+# --------------suscriptor de Float64----------------
 import rospy
 from geometry_msgs.msg import Point
 from geometry_msgs.msg import Quaternion
 
 # el codigo se identifica ante ros
-rospy.init_node('cod4_point_quat_sp', anonymous=True)	
+rospy.init_node('ej5_cod4_point_sub', anonymous=True)	
 
 int_value1 = 0.0
 int_value2 = 0.0
@@ -22,8 +22,8 @@ def callback(data):
     rospy.loginfo("y: %f", int_value2)
     rospy.loginfo("z: %f", int_value3)
 
-pub = rospy.Publisher('random_int_quat', Quaternion, queue_size=10)
-sub = rospy.Subscriber("random_int_point", Point, callback)  
+pub = rospy.Publisher('ej5_random_int_quat', Quaternion, queue_size=10)
+sub = rospy.Subscriber("ej5_random_int_point", Point, callback)  
 rate = rospy.Rate(1) # 1hz
 while not rospy.is_shutdown():
 	

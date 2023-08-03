@@ -5,18 +5,20 @@ from std_msgs.msg import Int32
 import random
 
 # el codigo se identifica ante ros
-rospy.init_node('cod2_int_pub', anonymous=True)
+rospy.init_node('ej3_cod2_int_pub', anonymous=True)
 # rospy.init_node('nombre-nodo', anonymous=True)
 # nombre-nodo puede ser cualquiera, 
 # preferible que sea igual al nombre del codigo
 
 # se crea el topico publicador
-pub = rospy.Publisher('random_int_2', Int32, queue_size=1)
+pub = rospy.Publisher('ej3_random_int_2', Int32, queue_size=1)
 # pub = rospy.Publisher('nombre-topico', tipo-mensaje, queue_size=1)
 
 rate = rospy.Rate(1) # 1hz --> 1s
 while not rospy.is_shutdown():
-    valor=random.randint(1,10)
+    valor=random.randint(1,100)
     print(valor)
     pub.publish(valor) # se publica el valor
+    # tambien se puede publicar al topico desde la terminal con:
+    # rostopic pub /random_int_2 std_msgs/Int32 '2'
     rate.sleep() # delay de 1 segundo

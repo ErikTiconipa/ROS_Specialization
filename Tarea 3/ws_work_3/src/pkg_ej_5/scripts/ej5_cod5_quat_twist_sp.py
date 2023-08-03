@@ -27,8 +27,8 @@ def callback(data):
 
 def funcion():
     global Int1_value,Int2_value,Int3_value,Int4_value,Int5_value,Int6_value
-    pub = rospy.Publisher('random_int_twist', Twist, queue_size=20)
-    sub = rospy.Subscriber("random_int_quat", Quaternion, callback)   
+    pub = rospy.Publisher('ej5_random_int_twist', Twist, queue_size=20)
+    sub = rospy.Subscriber("ej5_random_int_quat", Quaternion, callback)   
 
     rate = rospy.Rate(1) # 1hz
     while not rospy.is_shutdown():
@@ -47,7 +47,7 @@ def funcion():
 	    
 
 if __name__ == '__main__':
-	rospy.init_node('cod5_quat_twist_sp', anonymous=True)	
+	rospy.init_node('ej5_cod5_quat_twist_sp', anonymous=True)	
 	try:
 		funcion()
 	except rospy.ROSInterruptException:
